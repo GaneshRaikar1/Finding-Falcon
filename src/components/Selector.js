@@ -6,7 +6,7 @@ const Selector = ({ planets, vehicles, selectedPlanets, selectedVehicles, select
     <>
         <select required onChange={selectPlanet} id={index} value={ selectedPlanets ? "value" : "default"  } >
         <option disabled value="default" key={7} hidden={selectedPlanets} > 
-          { "-- select a Planet --"  }   
+           { "-- select a Planet --"  }   
         </option>
         <option disabled value="value" key={8} hidden={ !selectedPlanets }> 
           { selectedPlanets?.find( (p) => p.id === index ) ?
